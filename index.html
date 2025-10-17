@@ -3,109 +3,104 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FYJC Terminal Examination — November 2025 | Elphinstone College</title>
+  <title>FYJC Exam Timetable – November 2025 | Elphinstone College</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="notice-header" role="banner">
-    <div class="college">
-      <h1>Elphinstone College of Arts, Commerce and Science — Mumbai-32</h1>
-      <p class="sub">FYJC Terminal Examination — November, 2025</p>
-    </div>
-    <div class="meta">
-      <p><strong>Notice Date:</strong> 15/10/2025</p>
-    </div>
-  </header>
-
   <main>
-    <section class="controls" aria-label="Controls">
-      <label for="streamSelect">View stream:</label>
-      <select id="streamSelect" aria-controls="examTable">
+    <header>
+      <h1>Elphinstone College of Arts, Commerce and Science — Mumbai-32</h1>
+      <p class="sub"><strong>FYJC Terminal Examination — November 2025</strong></p>
+      <p class="meta">Notice Date: 15/10/2025</p>
+    </header>
+
+    <section class="controls">
+      <label for="stream">View Stream:</label>
+      <select id="stream">
         <option value="all">All Streams</option>
         <option value="science">Science</option>
         <option value="commerce">Commerce</option>
         <option value="arts">Arts</option>
       </select>
-
-      <button id="printBtn" type="button">Print Notice</button>
+      <button id="printBtn">Print Notice</button>
     </section>
 
-    <section class="notice" aria-labelledby="timetableTitle">
-      <h2 id="timetableTitle">Exam Timetable (02:00 pm – 04:00 pm)</h2>
-      <div class="table-wrap" role="table" aria-label="Exam timetable" id="examTable">
-        <div class="row header" role="row">
-          <div class="cell col-date" role="columnheader">Day / Date</div>
-          <div class="cell col-time" role="columnheader">Time</div>
-          <div class="cell col-science" role="columnheader">Science</div>
-          <div class="cell col-commerce" role="columnheader">Commerce</div>
-          <div class="cell col-arts" role="columnheader">Arts</div>
+    <section class="exam-list" id="examList">
+      <article class="exam-card">
+        <h3>10/11/2025 — Monday</h3>
+        <p class="time">02:00 pm – 04:00 pm</p>
+        <div class="subjects">
+          <div class="science"><span>Science:</span> English</div>
+          <div class="commerce"><span>Commerce:</span> English</div>
+          <div class="arts"><span>Arts:</span> English</div>
         </div>
+      </article>
 
-        <div class="row" role="row">
-          <div class="cell col-date" role="cell">10/11/2025 — Monday</div>
-          <div class="cell col-time" role="cell">02:00 pm – 04:00 pm</div>
-          <div class="cell col-science" role="cell">English</div>
-          <div class="cell col-commerce" role="cell">English</div>
-          <div class="cell col-arts" role="cell">English</div>
+      <article class="exam-card">
+        <h3>11/11/2025 — Tuesday</h3>
+        <p class="time">02:00 pm – 04:00 pm</p>
+        <div class="subjects">
+          <div class="science"><span>Science:</span> Marathi / Hindi / Comp. Sci. - I / Electronics - I</div>
+          <div class="commerce"><span>Commerce:</span> Marathi / Hindi</div>
+          <div class="arts"><span>Arts:</span> Marathi / Hindi</div>
         </div>
+      </article>
 
-        <div class="row" role="row">
-          <div class="cell col-date" role="cell">11/11/2025 — Tuesday</div>
-          <div class="cell col-time" role="cell">02:00 pm – 04:00 pm</div>
-          <div class="cell col-science" role="cell">Marathi / Hindi / Comp. Sci. - I / Electronics - I</div>
-          <div class="cell col-commerce" role="cell">Marathi / Hindi</div>
-          <div class="cell col-arts" role="cell">Marathi / Hindi</div>
+      <article class="exam-card">
+        <h3>12/11/2025 — Wednesday</h3>
+        <p class="time">02:00 pm – 04:00 pm</p>
+        <div class="subjects">
+          <div class="science"><span>Science:</span> Physics</div>
+          <div class="commerce"><span>Commerce:</span> B.K.</div>
+          <div class="arts"><span>Arts:</span> History</div>
         </div>
+      </article>
 
-        <div class="row" role="row">
-          <div class="cell col-date" role="cell">12/11/2025 — Wednesday</div>
-          <div class="cell col-time" role="cell">02:00 pm – 04:00 pm</div>
-          <div class="cell col-science" role="cell">Physics</div>
-          <div class="cell col-commerce" role="cell">B.K.</div>
-          <div class="cell col-arts" role="cell">History</div>
+      <article class="exam-card">
+        <h3>13/11/2025 — Thursday</h3>
+        <p class="time">02:00 pm – 04:00 pm</p>
+        <div class="subjects">
+          <div class="science"><span>Science:</span> Chemistry</div>
+          <div class="commerce"><span>Commerce:</span> Economics</div>
+          <div class="arts"><span>Arts:</span> Economics</div>
         </div>
+      </article>
 
-        <div class="row" role="row">
-          <div class="cell col-date" role="cell">13/11/2025 — Thursday</div>
-          <div class="cell col-time" role="cell">02:00 pm – 04:00 pm</div>
-          <div class="cell col-science" role="cell">Chemistry</div>
-          <div class="cell col-commerce" role="cell">Economics</div>
-          <div class="cell col-arts" role="cell">Economics</div>
+      <article class="exam-card">
+        <h3>14/11/2025 — Friday</h3>
+        <p class="time">02:00 pm – 04:00 pm</p>
+        <div class="subjects">
+          <div class="science"><span>Science:</span> Biology / Comp. Sci. II / Electronics - II</div>
+          <div class="commerce"><span>Commerce:</span> O.C.&amp;M.</div>
+          <div class="arts"><span>Arts:</span> Sociology</div>
         </div>
+      </article>
 
-        <div class="row" role="row">
-          <div class="cell col-date" role="cell">14/11/2025 — Friday</div>
-          <div class="cell col-time" role="cell">02:00 pm – 04:00 pm</div>
-          <div class="cell col-science" role="cell">Biology / Comp. Sci. II / Electronics - II</div>
-          <div class="cell col-commerce" role="cell">O.C.&amp;M.</div>
-          <div class="cell col-arts" role="cell">Sociology</div>
+      <article class="exam-card">
+        <h3>15/11/2025 — Saturday</h3>
+        <p class="time">02:00 pm – 04:00 pm</p>
+        <div class="subjects">
+          <div class="science"><span>Science:</span> Geography</div>
+          <div class="commerce"><span>Commerce:</span> —</div>
+          <div class="arts"><span>Arts:</span> Geography</div>
         </div>
+      </article>
 
-        <div class="row" role="row">
-          <div class="cell col-date" role="cell">15/11/2025 — Saturday</div>
-          <div class="cell col-time" role="cell">02:00 pm – 04:00 pm</div>
-          <div class="cell col-science" role="cell">Geography</div>
-          <div class="cell col-commerce" role="cell">—</div>
-          <div class="cell col-arts" role="cell">Geography</div>
+      <article class="exam-card">
+        <h3>17/11/2025 — Monday</h3>
+        <p class="time">02:00 pm – 04:00 pm</p>
+        <div class="subjects">
+          <div class="science"><span>Science:</span> Maths</div>
+          <div class="commerce"><span>Commerce:</span> Maths / S.P.</div>
+          <div class="arts"><span>Arts:</span> Political Science</div>
         </div>
-
-        <div class="row" role="row">
-          <div class="cell col-date" role="cell">17/11/2025 — Monday</div>
-          <div class="cell col-time" role="cell">02:00 pm – 04:00 pm</div>
-          <div class="cell col-science" role="cell">Maths</div>
-          <div class="cell col-commerce" role="cell">Maths / S.P</div>
-          <div class="cell col-arts" role="cell">Political Science</div>
-        </div>
-      </div>
-
-      <div class="footnote">
-        <p><strong>Exam Committee</strong> — Follow all exam rules and reporting times. Any discrepancies should be reported to the examination office immediately.</p>
-        <address>
-          <strong>Principal</strong><br />
-          Elphinstone College, 56 M. G. Road — 400 032
-        </address>
-      </div>
+      </article>
     </section>
+
+    <footer>
+      <p><strong>Exam Committee:</strong> Follow exam rules and timings. Report discrepancies immediately.</p>
+      <p><strong>Principal, Elphinstone College</strong><br>56 M.G. Road, Mumbai – 400 032</p>
+    </footer>
   </main>
 
   <script src="script.js"></script>
